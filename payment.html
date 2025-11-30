@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,3 +71,77 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Lexure</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="top seller.html">Top Sellers</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-box">
+            <h2>Payment</h2>
+
+            <form id="paymentForm">
+
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="text" name="contact" placeholder="Contact Number" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="address" placeholder="Shipping Address" required>
+                <input type="text" name="method" placeholder="Payment Method (Cash on Delivery / Card)" required>
+
+                <button type="submit" class="login-btn">Place Order</button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <h2 class="brand">Lexure</h2>
+            <p class="copyright">© 2025 Lexure. All Rights Reserved.</p>
+        </div>
+        <div class="footer-right">
+            <p>Phone: +92 300 1234567</p>
+            <p>Email: info@lexure.com</p>
+            <p>Address: 123 Luxury Street, Islamabad</p>
+            <p>
+                Follow us: 
+                <a href="#">Instagram</a> | 
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("paymentForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            alert("Your order has been placed successfully!");
+            window.location.href = "home.html";
+        });
+    </script>
+
+</body>
+</html>
+>>>>>>> 3cc6ed4 (Cart & Payment)
